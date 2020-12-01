@@ -30,3 +30,9 @@ https://jbox.sjtu.edu.cn/l/noXQob (password: eidr) <br>
 整个数据集包括 40 个案例，其中第 1-30 个是训练集，而第 31-40 个是测试集。 <br>
 您可能需要一些对这些数据进行预处理。<br>
 <br>
+
+### 我们fork了MLT_SegTHOR的代码到仓库进行复现，这个代码有UNet、ResUNet和DenseUNet的模型。
+<br>
+目前三维数据比较大，我们对数据进行可视化是通过ITK_SNAP，这是一个查看医疗三维数据的软件，可以很方便的查看CT图和标注的mask（注意文件路径地址全英文，都否软件的IO读取将会失效）。<br>
+<br>
+未来我们规划将模型改成lmser进行训练以期取得更好的结果。<br>
